@@ -14,6 +14,15 @@ package src.observer;
 
 public class PlayObserver {
     public static void main(String[] args) {
-        System.out.println("Observer");
+        System.out.println("----- Observer Pattern -----");
+        WeatherData weatherData = new WeatherData();
+
+        CurrentConditionalsDisplay currentDisplay = new CurrentConditionalsDisplay(weatherData);
+        HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
+        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+
+        weatherData.setMeasurements(80, 65,29.92f);
+
     }
 }
