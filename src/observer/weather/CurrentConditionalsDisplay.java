@@ -1,4 +1,4 @@
-package src.observer;
+package src.observer.weather;
 
 public class CurrentConditionalsDisplay implements Observer, DisplayElement{
     private float temperature;          // 기온
@@ -11,7 +11,7 @@ public class CurrentConditionalsDisplay implements Observer, DisplayElement{
     }
 
     public void display() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("현재 상태: 온도 ");
         sb.append(this.temperature);
         sb.append("F, 습도 ");
