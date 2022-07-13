@@ -25,17 +25,17 @@ public class WeatherData implements Subject{
     }
 
     // 대기압을 리턴하는 처리
-    private float getPressure() {
+    public float getPressure() {
         return this.pressure;
     }
 
     // 습도를 리턴하는 처리
-    private float getHumidity() {
+    public float getHumidity() {
         return this.humidity;
     }
 
     // 기온을 리턴하는 처리.
-    private float getTemperature() {
+    public float getTemperature() {
         return this.temperature;
     }
 

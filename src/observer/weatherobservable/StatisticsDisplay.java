@@ -17,7 +17,9 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         System.out.println("평균온도/최고온도/최저온도 = " + (tempSum / numReadings) + "/" + maxTemp + "/" + minTemp);
     }
 
-    public void update(float temp, float humidity, float pressure) {
+    public void update() {
+        float temp = this.weatherData.getTemperature();
+
         tempSum += temp;
         numReadings++;
 
