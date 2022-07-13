@@ -1,9 +1,9 @@
-package src.observer.weather;
+package src.observer.weatherobservable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherData implements Subject{
+public class WeatherData implements Subject {
     private List<Observer> observers;       // observer
     private float temperature;              // 기온
     private float humidity;                 // 습도
@@ -49,8 +49,8 @@ public class WeatherData implements Subject{
 
     public void notifyObservers() {
         for (Observer observer: observers) {
-            // 기온, 습도, 기압 데이터 업데이트
-            observer.update(temperature, humidity, pressure);
+            // 변경 알림 처리만 진행.
+            observer.update();
         }
     }
 }
