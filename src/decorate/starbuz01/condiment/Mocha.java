@@ -9,6 +9,7 @@ public class Mocha extends Decorator {
     public Mocha(Beverage beverage){
         this.beverage = beverage;
         this.description = this.beverage.getDescription() + ", 모카";
+        this.size = this.beverage.size;
         this.setCost();
     }
 
@@ -16,10 +17,13 @@ public class Mocha extends Decorator {
         switch (this.beverage.size){
             case TALL:
                 this.costval = this.beverage.costval.add(new BigDecimal("0.20"));
+                break;
             case GRANDE:
                 this.costval = this.beverage.costval.add(new BigDecimal("0.30"));
+                break;
             case VENTI:
                 this.costval = this.beverage.costval.add(new BigDecimal("0.40"));
+                break;
         }
     }
 //    public double cost() {

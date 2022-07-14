@@ -15,10 +15,13 @@ public class Espresso extends Beverage {
         switch (size){
             case TALL:
                 this.costval = new BigDecimal("1.39");
+                break;
             case GRANDE:
                 this.costval = new BigDecimal("1.69");
+                break;
             case VENTI:
                 this.costval = new BigDecimal("1.99");
+                break;
         }
     }
 

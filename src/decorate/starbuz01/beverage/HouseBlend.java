@@ -15,10 +15,13 @@ public class HouseBlend extends Beverage {
         switch (size){
             case TALL:
                 this.costval = new BigDecimal(".89");
+                break;
             case GRANDE:
                 this.costval = new BigDecimal("1.19");
+                break;
             case VENTI:
                 this.costval = new BigDecimal("1.49");
+                break;
         }
     }
 

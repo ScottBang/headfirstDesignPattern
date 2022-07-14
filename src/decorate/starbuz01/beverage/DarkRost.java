@@ -16,10 +16,13 @@ public class DarkRost extends Beverage {
         switch (size){
             case TALL:
                 this.costval = new BigDecimal("1.99");
+                break;
             case GRANDE:
                 this.costval = new BigDecimal("2.29");
+                break;
             case VENTI:
                 this.costval = new BigDecimal("2.59");
+                break;
         }
     }
 

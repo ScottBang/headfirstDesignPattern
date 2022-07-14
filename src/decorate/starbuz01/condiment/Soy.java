@@ -9,6 +9,7 @@ public class Soy extends Decorator {
     public Soy(Beverage beverage){
         this.beverage = beverage;
         this.description = this.beverage.getDescription() + ", 두유";
+        this.size = this.beverage.size;
         this.setCost();
     }
 
@@ -16,10 +17,13 @@ public class Soy extends Decorator {
         switch (this.beverage.size){
             case TALL:
                 this.costval = this.beverage.costval.add(new BigDecimal("0.15"));
+                break;
             case GRANDE:
                 this.costval = this.beverage.costval.add(new BigDecimal("0.25"));
+                break;
             case VENTI:
                 this.costval = this.beverage.costval.add(new BigDecimal("0.35"));
+                break;
         }
     }
 

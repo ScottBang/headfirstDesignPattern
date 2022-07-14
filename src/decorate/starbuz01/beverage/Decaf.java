@@ -15,10 +15,13 @@ public class Decaf extends Beverage {
         switch (size){
             case TALL:
                 this.costval = new BigDecimal("1.89");
+                break;
             case GRANDE:
                 this.costval = new BigDecimal("2.19");
+                break;
             case VENTI:
                 this.costval = new BigDecimal("2.49");
+                break;
         }
     }
 
