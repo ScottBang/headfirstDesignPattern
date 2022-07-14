@@ -5,11 +5,11 @@ import src.decorate.starbuz01.condiment.*;
 
 public class PlayStarbuz {
     public static void main(String[] args) {
-        Beverage_abstract beverage1 = new Espresso();
+        Beverage beverage1 = new Espresso();
         beverage1.display();
 
         // 모카 추가
-        Beverage_abstract beverage2 = new Mocha(beverage1);
+        Beverage beverage2 = new Mocha(beverage1);
         beverage2.display();
         // 모카샷 추가
         beverage2 = new Mocha(beverage2);

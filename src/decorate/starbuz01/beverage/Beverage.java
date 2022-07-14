@@ -2,7 +2,7 @@ package src.decorate.starbuz01.beverage;
 
 import java.math.BigDecimal;
 
-public abstract class Beverage_abstract {
+public abstract class Beverage {
 
     public String description = "Unknown beverage";       // 음료설명
     public BigDecimal costval = new BigDecimal("0.00");

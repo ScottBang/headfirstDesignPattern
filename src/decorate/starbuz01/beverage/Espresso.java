@@ -2,7 +2,7 @@ package src.decorate.starbuz01.beverage;
 
 import java.math.BigDecimal;
 
-public class Espresso extends Beverage_abstract{
+public class Espresso extends Beverage {
 
     public Espresso(){
         this.description = "에스프레소";

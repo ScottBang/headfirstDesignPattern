@@ -4,10 +4,10 @@
  */
 package src.decorate.starbuz01.condiment;
 
-import src.decorate.starbuz01.beverage.Beverage_abstract;
+import src.decorate.starbuz01.beverage.Beverage;
 
-public abstract class CondimentDecorator_agstract extends Beverage_abstract {
-    Beverage_abstract beverage;
+public abstract class Decorator extends Beverage {
+    Beverage beverage;
 
     public abstract String getDescription();
 }

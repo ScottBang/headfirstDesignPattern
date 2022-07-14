@@ -1,12 +1,12 @@
 package src.decorate.starbuz01.condiment;
 
-import src.decorate.starbuz01.beverage.Beverage_abstract;
+import src.decorate.starbuz01.beverage.Beverage;
 
 import java.math.BigDecimal;
 
-public class Milk extends CondimentDecorator_agstract{
+public class Milk extends Decorator {
 
-    public Milk(Beverage_abstract beverage){
+    public Milk(Beverage beverage){
         this.beverage = beverage;
         this.description = this.beverage.getDescription() + ", 밀크";
         this.costval = this.beverage.costval.add(new BigDecimal("0.10"));

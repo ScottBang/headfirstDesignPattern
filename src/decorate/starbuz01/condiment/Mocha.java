@@ -1,12 +1,12 @@
 package src.decorate.starbuz01.condiment;
 
-import src.decorate.starbuz01.beverage.Beverage_abstract;
+import src.decorate.starbuz01.beverage.Beverage;
 
 import java.math.BigDecimal;
 
-public class Mocha extends CondimentDecorator_agstract{
+public class Mocha extends Decorator {
 
-    public Mocha(Beverage_abstract beverage){
+    public Mocha(Beverage beverage){
         this.beverage = beverage;
         this.description = this.beverage.getDescription() + ", 모카";
         this.costval = this.beverage.costval.add(new BigDecimal("0.20"));
