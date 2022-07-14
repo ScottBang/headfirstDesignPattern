@@ -9,7 +9,20 @@ public class Espresso extends Beverage {
         this.costval = new BigDecimal("1.39");
     }
 
-    public double cost() {
-        return 1.39;
+    @Override
+    public void setSize(Size size) {
+        super.setSize(size);
+        switch (size){
+            case TALL:
+                this.costval = new BigDecimal("1.39");
+            case GRANDE:
+                this.costval = new BigDecimal("1.69");
+            case VENTI:
+                this.costval = new BigDecimal("1.99");
+        }
     }
+
+//    public double cost() {
+//        return 1.39;
+//    }
 }

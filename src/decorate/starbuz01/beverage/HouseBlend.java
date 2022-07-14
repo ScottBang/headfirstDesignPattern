@@ -9,7 +9,20 @@ public class HouseBlend extends Beverage {
         this.costval = new BigDecimal("0.89");
     }
 
-    public double cost() {
-        return 0.89;
+    @Override
+    public void setSize(Size size) {
+        super.setSize(size);
+        switch (size){
+            case TALL:
+                this.costval = new BigDecimal(".89");
+            case GRANDE:
+                this.costval = new BigDecimal("1.19");
+            case VENTI:
+                this.costval = new BigDecimal("1.49");
+        }
     }
+
+//    public double cost() {
+//        return 0.89;
+//    }
 }

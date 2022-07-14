@@ -6,6 +6,8 @@ import src.decorate.starbuz01.condiment.*;
 public class PlayStarbuz {
     public static void main(String[] args) {
         Beverage beverage1 = new Espresso();
+        // 사이즈 변경.
+        beverage1.setSize(Beverage.Size.GRANDE);
         beverage1.display();
 
         // 모카 추가
@@ -22,12 +24,5 @@ public class PlayStarbuz {
         beverage2.display();
 
 
-//        DarkRost coffe1 = new DarkRost();
-//        Espresso coffe2 = new Espresso();
-//        Mocha mocha1 = new Mocha(coffe1);
-//        Mocha mocha2 = new Mocha(coffe2);
-//
-//        System.out.println(mocha1.getDescription() + " : " + mocha1.cost());
-//        System.out.println(mocha2.getDescription() + " : " + mocha2.cost());
     }
 }
