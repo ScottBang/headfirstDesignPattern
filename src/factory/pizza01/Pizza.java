@@ -3,10 +3,10 @@ package src.factory.pizza01;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pizza {
+public abstract class Pizza {
     String name;
-    String dough;
-    String sauce;
+    String dough;   // 도우, 밀가루반죽
+    String sauce;   // <음식의> 소스
     List<String> toppings = new ArrayList<String>();
 
     public Pizza(){
