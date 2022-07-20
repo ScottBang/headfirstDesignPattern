@@ -1,7 +1,7 @@
 package mypattern.factory.pizza00;
 
 
-public class PlayPizzaStore00 {
+public class PlayPizzaStore {
     public static void main(String[] args) {
         PizzaStore store = new PizzaStore();
 
