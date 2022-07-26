@@ -1,6 +1,6 @@
 package mypattern.factory.pizza02.newyork;
 
-import mypattern.factory.pizza02.Pizza;
+import mypattern.factory.pizza02.hq.Pizza;
 
 public class NYStyleVeggiePizza extends Pizza {
     public NYStyleVeggiePizza(){

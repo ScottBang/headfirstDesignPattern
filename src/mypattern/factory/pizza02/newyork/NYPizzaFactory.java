@@ -4,8 +4,8 @@
 
 package mypattern.factory.pizza02.newyork;
 
-import  mypattern.factory.pizza02.Pizza;
-import  mypattern.factory.pizza02.PizzaStore;
+import mypattern.factory.pizza02.hq.Pizza;
+import mypattern.factory.pizza02.hq.PizzaStore;
 
 public class NYPizzaFactory extends PizzaStore {
     protected Pizza createPizza(String type) {

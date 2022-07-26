@@ -3,8 +3,10 @@
  *   - 각 지점의 PizzaStore가 상속받을 수 있도록 하되, orderPizza() 메서드는 그대로 사용하도록 강제 한다.
  */
 
-package mypattern.factory.pizza02;
+package mypattern.factory.pizza02.hq;
 
+
+import mypattern.factory.pizza02.hq.Pizza;
 
 public abstract class PizzaStore {
     /**

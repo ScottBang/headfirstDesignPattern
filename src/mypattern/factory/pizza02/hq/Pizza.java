@@ -1,4 +1,4 @@
-package mypattern.factory.pizza02;
+package mypattern.factory.pizza02.hq;
 
 import java.util.ArrayList;
 import java.util.List;
